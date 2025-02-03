@@ -1,0 +1,11 @@
+body {
+	background-color: darkslategrey;
+	font-family: monospace;
+}
+
+.container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: lightgrey;
+	border-radius: 25px;
+}

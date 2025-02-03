@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Add style -->
+	<link rel="stylesheet" text="text/css" href="style.css">
+
+	<title>Seatwork 1: JavaScript Basics</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container" id="container">
+		<h1 id="digital converter">Area & Circumferernce of a Circle</h1>
+		<p id="circle">find the area and circumference of a circle whose radius is 10.25cm</p>
+		<img src="circle.jpg" alt="circle">
+
+		<button type= "button" class="btn btn-outline-dark" onClick="
+				const r=10.25; 
+				var pi=3.14;
+				var r_pi=r*pi;
+				var area_r_pi=r_pi.toFixed(2);
+			// 
+			document.getElementById ('circle').innerHTML=
+			'the area of a circle whose radius is 10.25cm is' + '<kdb>' + area_r_pi">AREA
+		</button>
+		<button type= "button" class="btn btn-outline-dark" onClick="
+				const r=10.25; 
+				var pi=3.14;
+				var c_pi_r=2*pi*r;
+				var circumference_pi_r=c_pi_r.toFixed(2);
+			// 
+			document.getElementById ('circle').innerHTML=
+			'the circumference of a circle whose radius is 10.25cm is ' + '<kdb>' + circumference_pi_r">CIRCUMFERENCE
+		</button>
+
+		<div class="alert alert-secondary"></div>
+
+		<button type="button" class="btn btn-outline-dark" onClick="window.location.reload()">refresh</button>
+	</div>
+</div>
+</body>
+</html>
